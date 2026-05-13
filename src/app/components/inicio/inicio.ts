@@ -1,11 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-inicio',
   imports: [
-    CommonModule,
     FormsModule,
     ReactiveFormsModule
   ],
@@ -14,7 +13,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class Inicio {
 
-  inicio() {
-    
-    }
+  formulario = new FormGroup({
+    nome : new FormControl('')
+  });
+
+  //função chamada quando o formulário for submetido
+  iniciar() {
+   console.log(this.formulario.value);
+}
 }
