@@ -1,0 +1,97 @@
+<div class="container-fluid bg-primary min-vh-100 d-flex justify-content-center align-items-center">
+
+  <div class="container py-5">
+
+    <div class="card shadow-lg border-0 rounded p-4">
+
+      <h1 class="text-center text-primary fw-bold mb-4">
+        Quiz Fundec
+      </h1>
+
+      <h3 class="text-center text-muted mb-5">
+        Olá <strong>{{ nome() }}</strong>! Responda as 10 perguntas abaixo e clique em terminar.
+      </h3>
+
+      <form>
+
+        @for (pergunta of perguntas(); track pergunta.id; let i = $index) {
+
+          <div class="mb-4 p-3 border rounded">
+
+            <h5>{{ i + 1 }}. {{ pergunta.pergunta }}</h5>
+
+            @for (alternativa of pergunta.alternativas; track alternativa; let j = $index) {
+
+              <div class="form-check p-0">
+
+                <button
+                  type="button"
+                  class="btn w-100 text-start mb-2"
+                  [ngClass]="{
+                    'btn-outline-primary': respostas()[i] === null,
+                    'btn-success': respostas()[i] === j && j === pergunta.respostaCorreta,
+                    'btn-danger': respostas()[i] === j && j !== pergunta.respostaCorreta,
+                    'btn-outline-success': respostas()[i] !== null && j === pergunta.respostaCorreta && respostas()[i] !== j,
+                    'btn-outline-secondary': respostas()[i] !== null && respostas()[i] !== j && j !== pergunta.respostaCorreta
+                  }"
+                  (click)="responder(i, j)"
+                >
+                  {{ alternativa }}
+                </button>
+
+              </div>
+
+            }
+
+            @if (respostas()[i] !== null) {
+
+              <div class="mt-2">
+
+                <p
+                  class="fw-bold mb-0"
+                  [ngClass]="{
+                    'text-success': acertou(i),
+                    'text-danger': !acertou(i)
+                  }"
+                >
+                  {{ acertou(i) ? 'Você acertou!' : 'Você errou!' }}
+                </p>
+
+                @if (!acertou(i)) {
+                  <small class="text-muted">
+                    Resposta correta:
+                    <strong>{{ pergunta.alternativas[pergunta.respostaCorreta] }}</strong>
+                  </small>
+                }
+
+              </div>
+
+            }
+
+          </div>
+
+        }
+
+        <div class="alert alert-info text-center">
+          Você acertou:
+          <strong>{{ totalAcertos() }}</strong>
+          de
+          <strong>{{ perguntas().length }}</strong>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-primary w-100"
+          (click)="conferirResultado()"
+          [disabled]="!todasRespondidas()"
+        >
+          Concluir Quiz
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

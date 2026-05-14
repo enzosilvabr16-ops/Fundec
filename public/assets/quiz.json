@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Duque de Caxias pertence a qual região do estado do Rio de Janeiro?",
+    "alternativas": [
+      "Costa Verde",
+      "Baixada Fluminense",
+      "Região Serrana",
+      "Região dos Lagos"
+    ],
+    "respostaCorreta": 1
+  },
+  {
+    "id": 2,
+    "pergunta": "Qual é a principal refinaria localizada em Duque de Caxias?",
+    "alternativas": [
+      "REVAP",
+      "REDUC",
+      "RLAM",
+      "REPLAN"
+    ],
+    "respostaCorreta": 1
+  },
+  {
+    "id": 3,
+    "pergunta": "Qual rodovia federal passa por Duque de Caxias?",
+    "alternativas": [
+      "BR-040",
+      "BR-153",
+      "BR-262",
+      "BR-364"
+    ],
+    "respostaCorreta": 0
+  },
+  {
+    "id": 4,
+    "pergunta": "Qual bioma originalmente predominava na área da Baixada Fluminense, incluindo Duque de Caxias?",
+    "alternativas": [
+      "Cerrado",
+      "Caatinga",
+      "Mata Atlântica",
+      "Pampa"
+    ],
+    "respostaCorreta": 2
+  },
+  {
+    "id": 5,
+    "pergunta": "Antes do nome atual, a região era conhecida como:",
+    "alternativas": [
+      "Meriti",
+      "Petrópolis",
+      "Campos Verdes",
+      "Nova Esperança"
+    ],
+    "respostaCorreta": 0
+  },
+  {
+    "id": 6,
+    "pergunta": "Qual distrito abriga a REDUC?",
+    "alternativas": [
+      "Xerém",
+      "Imbariê",
+      "Campos Elíseos",
+      "Jardim Primavera"
+    ],
+    "respostaCorreta": 2
+  },
+  {
+    "id": 7,
+    "pergunta": "Duque de Caxias possui quantos distritos?",
+    "alternativas": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "respostaCorreta": 2
+  },
+  {
+    "id": 8,
+    "pergunta": "A Refinaria Duque de Caxias (REDUC) pertence a qual setor econômico",
+    "alternativas": [
+      "Têxtil",
+      "Metalúrgico",
+      "Petroquímico",
+      "Agropecuário"
+    ],
+    "respostaCorreta": 2
+  },
+  {
+    "id": 9,
+    "pergunta": "Quem foi o Duque de Caxias?",
+    "alternativas": [
+      "Um escritor brasileiro",
+      "Um militar e patrono do Exército Brasileiro",
+      "Um presidente da República",
+      "Um navegador português"
+    ],
+    "respostaCorreta": 1
+  },
+  {
+    "id": 10,
+    "pergunta": "Qual importante via expressa liga Duque de Caxias ao Rio de Janeiro?",
+    "alternativas": [
+      "Linha Vermelha",
+      "Avenida Brasil",
+      "Rodovia dos Bandeirantes",
+      "Via Dutra"
+    ],
+    "respostaCorreta": 0
+  }
+]

@@ -1,0 +1,23 @@
+<div class="container-fluid bg-primary min-vh-100 d-flex justify-content-center align-items-center">
+
+  <div class="card shadow-lg p-5 text-center bg-white rounded" style="max-width: 500px; width: 100%;">
+
+    <h1 class="text-primary fw-bold mb-4">Fundec</h1>
+
+    <p class="text-muted mb-4">
+      Bem-vindo! Digite seu nome para iniciar o quiz.
+    </p>
+
+    <form [formGroup]="formulario" (class="mb-4" )>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Digite seu nome" formControlName="nome">
+      </div>
+    </form>
+    <!-- Botão para iniciar o quiz, gravar nome e encaminhar para página quiz -->
+    <button class="btn btn-primary w-100" (click)="iniciar()" [class.disabled]="formulario.invalid">
+      Iniciar Quiz
+    </button>
+
+  </div>
+
+</div>
