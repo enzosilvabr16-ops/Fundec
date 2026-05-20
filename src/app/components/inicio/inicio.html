@@ -1,20 +1,13 @@
 <div class="container-fluid bg-primary min-vh-100 d-flex justify-content-center align-items-center">
 
   <div class="card shadow-lg p-5 text-center bg-white rounded" style="max-width: 500px; width: 100%;">
-<<<<<<< HEAD
 
     <h1 class="text-primary fw-bold mb-4">Fundec</h1>
 
-=======
-    
-    <h1 class="text-primary fw-bold mb-4">Fundec</h1>
-    
->>>>>>> 3f59c1e49920f99067e461b54ffa5d706d893ba2
     <p class="text-muted mb-4">
       Bem-vindo! Digite seu nome para iniciar o quiz.
     </p>
 
-<<<<<<< HEAD
     <form [formGroup]="formulario" (class="mb-4" )>
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Digite seu nome" formControlName="nome">
@@ -28,26 +21,3 @@
   </div>
 
 </div>
-=======
-<form [formGroup]="formulario" (class="mb-4")>
-  <div class="input-group mb-3">
-    <input 
-      type="text" 
-      class="form-control" 
-      placeholder="Digite seu nome"
-      formControlName="nome">
-  </div>
-</form>
-<!-- Botão para iniciar o quiz, gravar nome e encaminhar para página quiz -->
-<a 
-  class="btn btn-primary w-100"
-  href="/quiz"
-  (click)="iniciar()"
-  [class.disabled]="formulario.invalid">
-  Iniciar Quiz
-</a>
-
-  </div>
-
-</div>
->>>>>>> 3f59c1e49920f99067e461b54ffa5d706d893ba2

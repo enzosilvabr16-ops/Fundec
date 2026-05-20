@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, signal } from '@angular/core';
@@ -98,14 +97,3 @@ export class Quiz {
 
 
 }
-=======
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-quiz',
-  imports: [],
-  templateUrl: './quiz.html',
-  styleUrl: './quiz.css',
-})
-export class Quiz {}
->>>>>>> 3f59c1e49920f99067e461b54ffa5d706d893ba2
