@@ -24,3 +24,4 @@ export class Inicio {
     location.href = '/quiz';
   }
 }
+//feito
